@@ -19,11 +19,36 @@
 
         <controls:PageHeader x:Name="pageHeader" RelativePanel.AlignLeftWithPanel="True"
                              RelativePanel.AlignRightWithPanel="True"
-                             RelativePanel.AlignTopWithPanel="True" Text="Main Page"/>
+                             RelativePanel.AlignTopWithPanel="True" Text="Home"/>
 
-        <TextBlock Text="Dette Fungere bra dette her ja?"
-                  RelativePanel.Below="pageHeader"
+
+        <TextBlock x:Name="title" 
+                   Text="Search" FontSize="20"
+                   RelativePanel.Below="pageHeader"
+                   Margin="20,20,20,20"
                    />
+
+        <TextBox x:Name="Search_textbox" MinWidth="200" RelativePanel.Below="title" TextWrapping="Wrap" Margin="20,0,0,0"></TextBox>
+        
+        <Button x:Name="search_button" RelativePanel.RightOf="Search_textbox" RelativePanel.Below="title" Margin="20,0,0,0" Content="Search">
+            <Interactivity:Interaction.Behaviors>
+                <Core:EventTriggerBehavior EventName="Tapped">
+                    <Behaviors:MessageDialogAction Title="Under development!" Content="This feature is under development"/>
+                </Core:EventTriggerBehavior>
+            </Interactivity:Interaction.Behaviors>
+        </Button>
+
+        <Canvas x:Name="Canvas"
+                RelativePanel.Below="Search_textbox"
+                Width="500"
+                Height="400"
+                Margin="20,20,0,0">
+            <Viewbox x:Name="splashImage">
+                <Image Source="ms-appx:///Assets/PlaceholderImage.jpg"/>
+
+            </Viewbox>
+
+        </Canvas>
 
 
 
