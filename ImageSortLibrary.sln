@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageSortLibrary.Model", "I
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageSortLibrary.DataAccess", "ImageSortLibrary.DataAccess\ImageSortLibrary.DataAccess.csproj", "{D133B02D-4A1E-49AE-8BD2-5F58CFE43FA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageSortLibrary.UWP", "ImageSortLibrary.UWP\ImageSortLibrary.UWP.csproj", "{AC8E67A2-2711-41B4-B072-C38510371390}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,26 +69,6 @@ Global
 		{D133B02D-4A1E-49AE-8BD2-5F58CFE43FA5}.Release|x64.Build.0 = Release|Any CPU
 		{D133B02D-4A1E-49AE-8BD2-5F58CFE43FA5}.Release|x86.ActiveCfg = Release|Any CPU
 		{D133B02D-4A1E-49AE-8BD2-5F58CFE43FA5}.Release|x86.Build.0 = Release|Any CPU
-		{AC8E67A2-2711-41B4-B072-C38510371390}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{AC8E67A2-2711-41B4-B072-C38510371390}.Debug|ARM.ActiveCfg = Debug|ARM
-		{AC8E67A2-2711-41B4-B072-C38510371390}.Debug|ARM.Build.0 = Debug|ARM
-		{AC8E67A2-2711-41B4-B072-C38510371390}.Debug|ARM.Deploy.0 = Debug|ARM
-		{AC8E67A2-2711-41B4-B072-C38510371390}.Debug|x64.ActiveCfg = Debug|x64
-		{AC8E67A2-2711-41B4-B072-C38510371390}.Debug|x64.Build.0 = Debug|x64
-		{AC8E67A2-2711-41B4-B072-C38510371390}.Debug|x64.Deploy.0 = Debug|x64
-		{AC8E67A2-2711-41B4-B072-C38510371390}.Debug|x86.ActiveCfg = Debug|x86
-		{AC8E67A2-2711-41B4-B072-C38510371390}.Debug|x86.Build.0 = Debug|x86
-		{AC8E67A2-2711-41B4-B072-C38510371390}.Debug|x86.Deploy.0 = Debug|x86
-		{AC8E67A2-2711-41B4-B072-C38510371390}.Release|Any CPU.ActiveCfg = Release|x86
-		{AC8E67A2-2711-41B4-B072-C38510371390}.Release|ARM.ActiveCfg = Release|ARM
-		{AC8E67A2-2711-41B4-B072-C38510371390}.Release|ARM.Build.0 = Release|ARM
-		{AC8E67A2-2711-41B4-B072-C38510371390}.Release|ARM.Deploy.0 = Release|ARM
-		{AC8E67A2-2711-41B4-B072-C38510371390}.Release|x64.ActiveCfg = Release|x64
-		{AC8E67A2-2711-41B4-B072-C38510371390}.Release|x64.Build.0 = Release|x64
-		{AC8E67A2-2711-41B4-B072-C38510371390}.Release|x64.Deploy.0 = Release|x64
-		{AC8E67A2-2711-41B4-B072-C38510371390}.Release|x86.ActiveCfg = Release|x86
-		{AC8E67A2-2711-41B4-B072-C38510371390}.Release|x86.Build.0 = Release|x86
-		{AC8E67A2-2711-41B4-B072-C38510371390}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
