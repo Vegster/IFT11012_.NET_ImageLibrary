@@ -4,10 +4,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageSortLibrary.SampleData", "ImageSortLibrary.SampleData\ImageSortLibrary.SampleData.csproj", "{CB9B1A7F-BF5B-4A10-AEE1-A3BAAABECA40}"
+	ProjectSection(ProjectDependencies) = postProject
+		{70AD8D7B-AB60-4D15-B09A-5E4B4FBE8038} = {70AD8D7B-AB60-4D15-B09A-5E4B4FBE8038}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageSortLibrary.Model", "ImageSortLibrary.Model\ImageSortLibrary.Model.csproj", "{15856435-3FD0-4D3B-8536-088C8D8E7AFF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageSortLibrary.DataAccess", "ImageSortLibrary.DataAccess\ImageSortLibrary.DataAccess.csproj", "{D133B02D-4A1E-49AE-8BD2-5F58CFE43FA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageSortLibrary.UWP", "ImageSortLibrary.UWP\ImageSortLibrary.UWP.csproj", "{70AD8D7B-AB60-4D15-B09A-5E4B4FBE8038}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +74,28 @@ Global
 		{D133B02D-4A1E-49AE-8BD2-5F58CFE43FA5}.Release|x64.Build.0 = Release|Any CPU
 		{D133B02D-4A1E-49AE-8BD2-5F58CFE43FA5}.Release|x86.ActiveCfg = Release|Any CPU
 		{D133B02D-4A1E-49AE-8BD2-5F58CFE43FA5}.Release|x86.Build.0 = Release|Any CPU
+		{70AD8D7B-AB60-4D15-B09A-5E4B4FBE8038}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{70AD8D7B-AB60-4D15-B09A-5E4B4FBE8038}.Debug|Any CPU.Build.0 = Debug|x86
+		{70AD8D7B-AB60-4D15-B09A-5E4B4FBE8038}.Debug|Any CPU.Deploy.0 = Debug|x86
+		{70AD8D7B-AB60-4D15-B09A-5E4B4FBE8038}.Debug|ARM.ActiveCfg = Debug|ARM
+		{70AD8D7B-AB60-4D15-B09A-5E4B4FBE8038}.Debug|ARM.Build.0 = Debug|ARM
+		{70AD8D7B-AB60-4D15-B09A-5E4B4FBE8038}.Debug|ARM.Deploy.0 = Debug|ARM
+		{70AD8D7B-AB60-4D15-B09A-5E4B4FBE8038}.Debug|x64.ActiveCfg = Debug|x64
+		{70AD8D7B-AB60-4D15-B09A-5E4B4FBE8038}.Debug|x64.Build.0 = Debug|x64
+		{70AD8D7B-AB60-4D15-B09A-5E4B4FBE8038}.Debug|x64.Deploy.0 = Debug|x64
+		{70AD8D7B-AB60-4D15-B09A-5E4B4FBE8038}.Debug|x86.ActiveCfg = Debug|x86
+		{70AD8D7B-AB60-4D15-B09A-5E4B4FBE8038}.Debug|x86.Build.0 = Debug|x86
+		{70AD8D7B-AB60-4D15-B09A-5E4B4FBE8038}.Debug|x86.Deploy.0 = Debug|x86
+		{70AD8D7B-AB60-4D15-B09A-5E4B4FBE8038}.Release|Any CPU.ActiveCfg = Release|x86
+		{70AD8D7B-AB60-4D15-B09A-5E4B4FBE8038}.Release|ARM.ActiveCfg = Release|ARM
+		{70AD8D7B-AB60-4D15-B09A-5E4B4FBE8038}.Release|ARM.Build.0 = Release|ARM
+		{70AD8D7B-AB60-4D15-B09A-5E4B4FBE8038}.Release|ARM.Deploy.0 = Release|ARM
+		{70AD8D7B-AB60-4D15-B09A-5E4B4FBE8038}.Release|x64.ActiveCfg = Release|x64
+		{70AD8D7B-AB60-4D15-B09A-5E4B4FBE8038}.Release|x64.Build.0 = Release|x64
+		{70AD8D7B-AB60-4D15-B09A-5E4B4FBE8038}.Release|x64.Deploy.0 = Release|x64
+		{70AD8D7B-AB60-4D15-B09A-5E4B4FBE8038}.Release|x86.ActiveCfg = Release|x86
+		{70AD8D7B-AB60-4D15-B09A-5E4B4FBE8038}.Release|x86.Build.0 = Release|x86
+		{70AD8D7B-AB60-4D15-B09A-5E4B4FBE8038}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
