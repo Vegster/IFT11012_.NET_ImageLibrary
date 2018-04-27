@@ -45,9 +45,7 @@
                 Margin="20,20,0,0">
             <Viewbox x:Name="splashImage">
                 <Image Source="ms-appx:///Assets/PlaceholderImage.jpg"/>
-
             </Viewbox>
-
         </Canvas>
 
 

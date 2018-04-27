@@ -46,6 +46,26 @@
                                Text="Search" />
                 </StackPanel>
             </Controls:HamburgerButtonInfo>
+            <Controls:HamburgerButtonInfo ClearHistory="True" PageType="views:EditPage">
+                <StackPanel Orientation="Horizontal">
+                    <SymbolIcon Width="48"
+                                Height="48"
+                                Symbol="Edit" />
+                    <TextBlock Margin="12,0,0,0"
+                               VerticalAlignment="Center"
+                               Text="Edit Image" />
+                </StackPanel>
+            </Controls:HamburgerButtonInfo>
+            <Controls:HamburgerButtonInfo ClearHistory="True" PageType="views:UploadPage">
+                <StackPanel Orientation="Horizontal">
+                    <SymbolIcon Width="48"
+                                Height="48"
+                                Symbol="Upload" />
+                    <TextBlock Margin="12,0,0,0"
+                               VerticalAlignment="Center"
+                               Text="Upload Image" />
+                </StackPanel>
+            </Controls:HamburgerButtonInfo>
         </Controls:HamburgerMenu.PrimaryButtons>
 
         <Controls:HamburgerMenu.SecondaryButtons>
