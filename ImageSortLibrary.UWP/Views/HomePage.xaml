@@ -23,7 +23,7 @@
 
 
         <TextBlock x:Name="title" 
-                   Text="Welcome to ('title of software here!')" FontSize="50"
+                   Text="Welcome to image library" FontSize="50"
                    RelativePanel.Below="pageHeader"
                    Margin="20,50,20,20"
                    RelativePanel.AlignHorizontalCenterWithPanel="True"
