@@ -6,14 +6,24 @@
       xmlns:Core="using:Microsoft.Xaml.Interactions.Core"
       xmlns:Interactivity="using:Microsoft.Xaml.Interactivity"
       xmlns:controls="using:Template10.Controls"
+      xmlns:model ="using:ImageSortLibrary.Model"
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="using:ImageSortLibrary.UWP.Views"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       xmlns:vm="using:ImageSortLibrary.UWP.ViewModels" mc:Ignorable="d">
 
     <Page.DataContext>
-        <vm:MainPageViewModel x:Name="ViewModel"/>
+        <vm:SearchPageViewModel x:Name="ViewModel"/>
     </Page.DataContext>
+
+    <Page.Resources>
+
+        <CollectionViewSource 
+            x:Name="picturesViewSource"                   
+            Source="{x:Bind ViewModel.Pictures}">
+        </CollectionViewSource>
+        
+    </Page.Resources>
 
     <RelativePanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
@@ -47,6 +57,20 @@
                 <Image Source="ms-appx:///Assets/PlaceholderImage.jpg"/>
             </Viewbox>
         </Canvas>
+        
+        <RelativePanel RelativePanel.Below="Canvas">
+            <TextBlock FontSize="12" Text="Picture data from donau server: "/>
+            <GridView ItemsSource="{Binding Source={StaticResource picturesViewSource}}" Height="400" Width="150" Margin="20,20,0,0">
+                <GridView.ItemTemplate>
+                    <DataTemplate x:DataType="model:Picture">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontSize="10" Margin="5,0,5,0" Text="{x:Bind Path=PictureTitle}" Width="150" Height="40"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </GridView.ItemTemplate>
+            </GridView>
+
+        </RelativePanel>
         
 
 

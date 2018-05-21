@@ -42,7 +42,7 @@ namespace ImageSortLibrary.UWP.Views
             Windows.Storage.StorageFile file = await picker.PickSingleFileAsync();
             if(file != null)
             {
-                SourceFile.Text = "Picked photo: " + file.Name;
+                SourceFile.Text = "Picked photo: " + file.Path;
             }
             else
             {
